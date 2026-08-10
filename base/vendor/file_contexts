@@ -901,7 +901,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper-service\.mitee               u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.identity-service\.mitee@5.0             u:object_r:hal_identity_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.keymaster@4\.0-service\.mitee           u:object_r:hal_keymaster_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint@3.0-service\.mitee    u:object_r:hal_keymint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.security\.keymint(@[0-9]+\.0+)?-service\.mitee    u:object_r:hal_keymint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.secure_element-service           u:object_r:hal_secure_element_default_exec:s0
 
 # MiTEE system files
@@ -1015,6 +1015,7 @@
 
 /vendor/bin/vpud             u:object_r:vpud_native_exec:s0
 /vendor/bin(/mt[0-9]+)?/v3avpud(\.mt[0-9]+)? u:object_r:vpud_native_exec:s0
+/vendor/bin(/mt[0-9]+)?/v3avpud-64b(\.mt[0-9]+)? u:object_r:vpud_native_exec:s0
 
 # EARA-IO
 /vendor/bin/eara_io_service u:object_r:eara_io_exec:s0
